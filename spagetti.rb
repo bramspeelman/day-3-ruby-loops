@@ -10,6 +10,8 @@ end
 
 NUM_EGGS = 5
 NUM_CHEESE =6
+NUM_ONIONS = 10
+
 
 ingredients = [
   {name: "eggs", quantity: NUM_EGGS},
@@ -52,3 +54,26 @@ steps = [
   { description: "add clutched eggs to the pan", action: "add_clutch_eggs_to_pan"
   { description: "after 10 minutes take out eggs", action: "take_out_eggs" }, },
 ]
+
+def generic_recipe_step
+  puts "On it!"
+  print_progress_bar
+end
+
+def cut_onions
+  counter = 0
+  while counter <NUM_ONIONS
+    counter += 1
+    print "Cut #{counter}"
+    print_progress_bar
+  end
+end
+
+def cut_onions_even_smaller
+  counter = 0
+  while counter <NUM_ONIONS
+    counter +=1
+    print "Cut the #{NUM_ONIONS}onions much smaller "
+    print_progress_bar
+  end
+end
