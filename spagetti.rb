@@ -1,9 +1,8 @@
-def print_divider
-  puts "*" * 40
-  puts "\n"
-end
+NUM_EGGS = 5
+NUM_CHEESE =6
 
-def print_progress_bar
-  3.times { sleep 0.5; print "." }
-  puts "\n"
-end 
+ingredients = [
+  {name: "eggs", quantity: NUM_EGGS},
+  {name: "cheese", quantity: NUM_CHEESE},
+  {name:"onion", quantity:1},
+  {name:"oil", quantity:"some"}]
