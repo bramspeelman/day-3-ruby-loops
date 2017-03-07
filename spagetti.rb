@@ -42,4 +42,13 @@ loop do
   else
     puts "That's not a valid input. Try again."
 end
-end
+
+steps = [
+  { description: "break 2 eggs in bowl", action: "break_eggs_in_bowl" },
+  { description: "clutch eggs", action: "clutch_eggs" },
+  { description: "chop the onions", action: "generic_recipe_step" },
+  { description: "add oil to the pan", action: "oil_to_pan" },
+  { description: "add onions to the pan", action: "onions_to_pan" },
+  { description: "add clutched eggs to the pan", action: "add_clutch_eggs_to_pan"
+  { description: "after 10 minutes take out eggs", action: "take_out_eggs" }, },
+]
